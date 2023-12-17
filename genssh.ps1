@@ -1,5 +1,17 @@
+Write-Host @"
+⠀⢀⣠⣤⣤⣄⡀⠀
+⣴⣿⣿⣿⣿⣿⣿⣦
+⣿⣿⣿⣿⣿⣿⣿⣿
+⣇⠈⠉⡿⢿⠉⠁⢸      "Memento Mori" 
+⠙⠛⢻⣷⣾⡟⠛⠋
+⠀⠀⠀⠈⠁⠀⠀⠀
+"@
+
 # Obtener la ruta del script
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+# Configurar la codificación UTF-8 para los mensajes
+$OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Solicitar la dirección de correo electrónico asociada a GitHub
 $email = Read-Host "Ingresa tu dirección de correo electrónico asociada a GitHub"
